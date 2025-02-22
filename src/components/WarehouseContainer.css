@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.warehouse-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101828;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    color: white;
+
+    @media screen and (max-width:650px) {
+        padding: 1rem 0;
+    }
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #4158D0;
+    color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    @media screen and (max-width:650px) {
+        font-size: 1.5rem;
+    }
+
+
+}
+ol{
+    display: flex;
+    gap: 2rem;
+}
+li{
+    font-size: 1.4rem;
+    list-style: none;
+
+    @media screen and (max-width:430px) {
+        font-size: 1rem;
+    }
+}
+.search-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+    background-color:#1E2939;
+
+    @media screen and (max-width:888px) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    input{
+        width: 50%;
+        padding: 15px;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+        background-color: #364153;
+        font-size: 1.4rem;
+        color: white;
+
+            @media screen and (max-width:888px) {
+                width: 90%;
+        }
+    }
+}
+.filter-section{
+    display: flex;
+    gap: 2rem;
+
+    @media screen and (max-width:1100px) {
+        gap: 10px;
+    }
+
+    select{
+        padding: 10px 21px;
+        text-align: start;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        background-color: #364153;
+
+        @media screen and (max-width:1100px) {
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+        @media screen and (max-width:430px) {
+            font-size: 13px;
+        }
+    }
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.space{
+    color: #fff;
+    text-align: start;
+}
